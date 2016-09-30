@@ -8,3 +8,5 @@ target_include_directories(boost_iterator BEFORE INTERFACE ${CMAKE_CURRENT_SOURC
 
 install(TARGETS boost_iterator DESTINATION lib)
 install(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/include/boost DESTINATION include)
+
+add_library(boost::iterator ALIAS boost_iterator)
